@@ -1,7 +1,7 @@
 // Wait for DOM
 window.addEventListener('DOMContentLoaded', () => {
   // Inject Header
-  fetch('/includes/header.html')
+  fetch('includes/header.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('site-header').innerHTML = html;
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     .catch(err => console.error('Header load error:', err));
 
   // Inject Footer
-  fetch('/includes/footer.html')
+  fetch('includes/footer.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('site-footer').innerHTML = html;
